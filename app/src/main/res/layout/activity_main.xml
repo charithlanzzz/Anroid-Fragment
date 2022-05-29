@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="changeFragment"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnfragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeFragment"
+        android:text="FRAGMENT 1" />
+
+    <Button
+        android:id="@+id/btnfragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeFragment"
+        android:text="FRAGMENT 2" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fgmntDefault"
+        android:name="com.example.androidfragment.fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
